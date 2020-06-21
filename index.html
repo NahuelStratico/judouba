@@ -34,39 +34,63 @@
         </nav>
         <div class="contenedor head">
             <h1 class="titulo">judouba</h1>
-            <p class="copy">Estas en casa</p>
+            <p class="copy">Más que un deporte una familia.</p>
         </div>
     </header>
 
     <main>
+        <!-- Descripción inicial -->
+        <div class="description">
+           <h4 class="description-content">
+            La actividad se realiza en el sum del campo de deporte de la Universidad de Buenos Aires.
+            </h4> 
+        </div>
 
-        <section class="contenedor">
-            <h2 class="subtitulo">Nuestros profesores</h2>
-            <div class="row justify-content-center profesores" id="profesores">
+        <!--  Profesores -->
+        <section class="contenedor" id="profesores">
+            <h2 class="subtitulo">Profesores</h2>
 
-                <div class="col-12 col-md-6 d-flex justify-content-center">
-                    <!-- <img src="img/jorgito.jpg" alt="Jorge Repetto" class="rounded"> -->
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/jorgito.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Jorge Repetto(h)</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-secondary">Leer más</a>
-                        </div>
-                    </div>
+             <!-- Sección Jorge Padre -->
+            <div class="row justify-content-around profesores">
+
+                <!-- Jorge Padre -->
+                <div class="col-12 col-md-4 d-flex flex-column justify-content-center">
+                    <img src="img/viejojudo.jpeg" alt="Jorge Repetto" class="img-fluid foto_viejo img-thumbnail rounded">
+                    <h3 class="profesor_title">Jorge Repetto</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur neque ratione, nobis molestias id magnam suscipit odio voluptatem unde veniam.</p>
+                    <a href="">
+                        <button class="btn btn-secondary">
+                            Saber más
+                        </button>
+                    </a>
                 </div>
 
-                <div class="col-12 col-md-6 d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/jorgito.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Jorge Repetto</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-secondary">Leer más</a>
-                        </div>
-                    </div>
+                <!-- Jorge Hijo -->
+                <div class="col-12 col-md-4 d-flex flex-column justify-content-center">
+                    <img src="img/viejojudo.jpeg" alt="Jorge Repetto" class="img-fluid foto_viejo img-thumbnail rounded">
+                    <h3 class="profesor_title">Jorge Repetto(h)</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur neque ratione, nobis molestias id magnam suscipit odio voluptatem unde veniam.</p>
+                    <a href="">
+                        <button class="btn btn-secondary">
+                            Saber más
+                        </button>
+                    </a>
                 </div>
+               
+            </div>
 
+          
+
+        </section>
+
+        <section class="contenedor" id="instagram">
+            <h3 class="instagram_title">Seguinos en instagram</h3>
+
+            <div class="row">
+                <div class="col-12">
+                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                    <div class="elfsight-app-fdb258d6-9e5b-4a32-91a9-9463c99d0139"></div>
+                </div>
             </div>
         </section>
         
@@ -74,6 +98,7 @@
    
 
     <!-- Script -->
+    
     <script src="menu.js"></script>
 </body>
 </html>
