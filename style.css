@@ -127,7 +127,6 @@ header{
 .card__thumbnail{
     width: 650px;
     height: 200px;
-    /* background: #000; */
     margin-right: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -135,6 +134,7 @@ header{
 }
 .card__img{
     width: 100%;
+    border-radius: 10px;
 }
 .card__titulo{
     font-family: 'Open Sans', sans-serif;
@@ -282,6 +282,16 @@ header{
     .vermas{
         margin-bottom: 2rem;
     }
+    .card{
+        flex-direction: column;
+    }
+    .card__thumbnail{
+        max-width: 400px;
+        margin: 0;
+    }
+    .card__textos{
+        margin: 2rem;
+    }
 }
 
 @media screen and (max-width:500px){
@@ -302,6 +312,19 @@ header{
         font-size: 1.5rem;
         text-align: left;
         line-height: 31px;
+    }
+    .card__thumbnail{
+        max-width: 200px;
+        margin: 0;
+    }
+    .card__textos{
+        margin: 1rem;
+    }
+    .card__titulo-jorge{
+        margin-top: 1.2rem;
+    }
+    .card__titulo-jorgito{
+        margin-top: -2rem;
     }
     #profesores{
         padding-top: 1rem;
