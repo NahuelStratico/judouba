@@ -11,8 +11,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- Animate css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
@@ -48,11 +46,21 @@
 
     <main>
         <!-- Descripción inicial -->
-        <div class="description">
+        <!-- <div class="description">
            <h4 class="description-content">
             La actividad se realiza en el sum del campo de deporte de la Universidad de Buenos Aires.
             </h4> 
+        </div> -->
+
+        <!-- Clases por zoom -->
+        <div class="jumbotron contenedor info">
+            <h4 class="display-4">Clases por zoom</h4>
+            <p class="lead">Debido al covid-19 estamos dictando clases semanales de judo adaptado al entorno del hogar.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary" href="#" role="button">Leer más</a>
         </div>
+
         <!-- Sección Desktop profesores -->
         <div class="contenedor">
             <!-- Card Jorge Padre -->
@@ -89,41 +97,6 @@
                 </div>
             </div>
         </div>
-      
-
-        <!--  Profesores -->
-        <section class="contenedor hidden" id="profesores">
-            <h2 class="subtitulo">Profesores</h2>
-
-             <!-- Sección Jorge Padre -->
-            <div class="row justify-content-around profesores">
-
-                <!-- Jorge Padre -->
-                <div class="col-12 col-md-4 d-flex flex-column justify-content-center">
-                    <img src="img/viejojudo.jpeg" alt="Jorge Repetto" class="img-fluid foto_viejo img-thumbnail rounded">
-                    <h3 class="profesor_title">Jorge Repetto</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur neque ratione, nobis molestias id magnam suscipit odio voluptatem unde veniam.</p>
-                    <a href="">
-                        <button class="btn btn-secondary vermas">
-                            Saber más
-                        </button>
-                    </a>
-                </div>
-
-                <!-- Jorge Hijo -->
-                <div class="col-12 col-md-4 d-flex flex-column justify-content-center">
-                    <img src="img/viejojudo.jpeg" alt="Jorge Repetto" class="img-fluid foto_viejo img-thumbnail rounded">
-                    <h3 class="profesor_title">Jorge Repetto(h)</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur neque ratione, nobis molestias id magnam suscipit odio voluptatem unde veniam.</p>
-                    <a href="">
-                        <button class="btn btn-secondary">
-                            Saber más
-                        </button>
-                    </a>
-                </div>
-               
-            </div>
-        </section>
 
         <!-- Sección Instagram -->
         <section class="instagram" id="instagram">
@@ -143,30 +116,46 @@
     <footer class="footer" id="contacto">
         <h3 class="contacto_title">Contactanos</h3>
 
-        <div class="row footer_content justify-content-center animate__animated animate__backInUp">
-            <div class="col-12 col-md-6 contact_form">
-                <form>
-                    <p>
-                        <label>Nombre</label>
-                        <input type="text" name="name" required>
-                    </p>
-                    <p>
-                        <label>Email</label>
-                        <input type="email" name="email" required>
-                    </p>
-                    
-                    <p class="block">
-                        <label>Mensaje</label>
-                        <textarea name="message" rows="3"></textarea>
-                    </p>
-                    <p class="block">
-                        <button type="submit">
-                            Enviar
-                        </button>
-                    </p>
+        <div class="row footer_content justify-content-center">
+            <div class="col-12 col-md-9 col-lg-7 text-center">
+
+                <!-- Formulario -->
+                <form class="form-group" id="formulario-contacto" method="POST">
+                    <div class="row">
+                        <div class="col-12 mb-4 col-sm-6">
+                            <input type="text" class="form-control" name="name" placeholder="Nombre" required>
+                        </div>
+                        <div class="col-12 mb-4 col-sm-6">
+                            <input type="email" class="form-control" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <textarea class="form-control" id="mensaje" rows="3" name="msg" placeholder="Deja tu mensaje..." required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" id="btn" class="btn btn-primary btn-block mt-3">Enviar</button>
+                
+                    <div id="alerta" class="alert mt-5 resp">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                        <strong class="respuesta"></strong> <span class="mensaje-alerta"></span>
+                    </div>
                 </form>
             </div>
     </footer>
+
+    <!-- Copyright -->
+    <div class="copyright px-4 py-4">
+        <div class="row justify-content-center text-center">
+            <h4 class="text-muted font-open">Buscanos en redes sociales</h4>
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <a href="https://www.instagram.com/judouba/?hl=es-la" target="_blank">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+            </div>
+        </div>
+    </div>
+   
    
 
 

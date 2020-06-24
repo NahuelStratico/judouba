@@ -210,6 +210,13 @@ header{
     color: #ffffff;
 }
 
+/* ====================================== Informacion ZOOM */
+.info{
+    margin-top: 2rem;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 /* ====================================== Footer */
 
 .footer{
@@ -270,6 +277,20 @@ header{
     background: #000000;
 }
 
+/* ===================================== Copyright */
+
+.copyright{
+    background: #F5F5F5;
+    margin-top: 2rem;
+}
+
+
+
+.copyright a {
+    color: #999999;
+    font-size: 3.5em;
+}
+
 
 /* ========================================= //// MEDIA QUERIES /// ================================== */
 
@@ -292,6 +313,7 @@ header{
     .card__textos{
         margin: 2rem;
     }
+
 }
 
 @media screen and (max-width:500px){
@@ -332,6 +354,7 @@ header{
     .copy{
         font-size: 1.5em;
     }
+
     .contact_form form{
         display: block;
     }
