@@ -12,6 +12,10 @@ body{
     scroll-behavior: smooth;
 }
 
+.hidden{
+    display: none;
+}
+
 .contenedor{
     width: 90%;
     max-width: 1200px;
@@ -108,7 +112,72 @@ header{
     text-align: center;
 }
 
-/* =================================== Seccion Profesores */
+/* =================================== Seccion profesores Desktop */
+
+.card{
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+.card__thumbnail{
+    width: 650px;
+    height: 200px;
+    /* background: #000; */
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+.card__img{
+    width: 100%;
+}
+.card__titulo{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.card__extracto{
+    line-height: 28px;
+    color: #6D6D6D;
+    margin-bottom: 20px;
+}
+.boton{
+    border: none;
+    min-width: 180px;
+    height: 50px;
+    padding: 0 30px;
+    background: #000000;
+    display: inline-block;
+    border-radius: 100px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #403CC2;
+    color: #fff;
+    transition: .3s ease all;
+}
+.boton__texto{
+    font-weight: 600;
+}
+.boton:hover{
+    background: #1B1881;
+    text-decoration: none;
+    color: #ffffff;
+}
+.boton--absolute{
+    position: absolute;
+    right: 20px;
+    bottom: -25px;
+}
+
+/* =================================== Seccion Profesores Mobile*/
 
 .profesores{
     margin: 0;
