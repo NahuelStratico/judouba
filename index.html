@@ -11,14 +11,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <!-- Animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Boxicons -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Font -->
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/afecc65938.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -28,9 +34,11 @@
         <nav class="menu-navegacion">
             <a href="#inicio">Inicio</a>
             <a href="#profesores">Profesores</a>
-            <a href="#">Instagram</a>
-            <a href="#">Contacto</a>
-            <i class='bx bxl-instagram' ></i>
+            <a href="#instagram">Instagram</a>
+            <a href="#contacto">Contacto</a>
+            <a href="https://www.instagram.com/judouba/?hl=es-la" target="blank">
+                <i class='bx bxl-instagram' ></i>
+            </a>
         </nav>
         <div class="contenedor head">
             <h1 class="titulo">judouba</h1>
@@ -59,7 +67,7 @@
                     <h3 class="profesor_title">Jorge Repetto</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur neque ratione, nobis molestias id magnam suscipit odio voluptatem unde veniam.</p>
                     <a href="">
-                        <button class="btn btn-secondary">
+                        <button class="btn btn-secondary vermas">
                             Saber más
                         </button>
                     </a>
@@ -83,22 +91,52 @@
 
         </section>
 
-        <section class="contenedor" id="instagram">
-            <h3 class="instagram_title">Seguinos en instagram</h3>
-
-            <div class="row">
-                <div class="col-12">
-                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                    <div class="elfsight-app-fdb258d6-9e5b-4a32-91a9-9463c99d0139"></div>
+        <!-- Sección Instagram -->
+        <section class="instagram" id="instagram">
+                <h3 class="instagram_title text-center">Seguinos en instagram</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                            <div class="elfsight-app-fdb258d6-9e5b-4a32-91a9-9463c99d0139"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </section>
-        
     </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <h3 class="contacto_title">Contactanos</h3>
+
+        <div class="row footer_content justify-content-center">
+            <div class="col-12 col-md-6 contact_form">
+                <form>
+                    <p>
+                        <label>Nombre</label>
+                        <input type="text" name="name" required>
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email" required>
+                    </p>
+                    
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+    </footer>
    
 
+
     <!-- Script -->
-    
     <script src="menu.js"></script>
 </body>
 </html>
